@@ -3,10 +3,10 @@
 Информационный сайт DeFi-проекта
 
 ## Технологии
-![React](https://img.shields.io/badge/-React-000?logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/-HTML5-000?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-000?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-000?logo=javaScript&logoColor=black)
+![React](https://img.shields.io/badge/-React-000?logo=react)
+![HTML5](https://img.shields.io/badge/-HTML5-000?logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS3-000?logo=css3)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000?logo=javaScript)
 ![Webpack](https://img.shields.io/badge/-Webpack-000?logo=webpack)
 ![SASS](https://img.shields.io/badge/-SASS-000?logo=sass)
 ![npm](https://img.shields.io/badge/-npm-000?logo=npm)
