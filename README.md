@@ -7,9 +7,9 @@
 ![HTML5](https://img.shields.io/badge/-HTML5-e34f26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572b6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-f7df1e?logo=javaScript&logoColor=black)
-![Webpack](https://img.shields.io/badge/-Webpack-61daf8?logo=webpack&logoColor=black)
-![SASS](https://img.shields.io/badge/-SASS-e34f26?logo=sass&logoColor=white)
-![npm](https://img.shields.io/badge/-npm-1572b6?logo=npm&logoColor=white)
+![Webpack](https://img.shields.io/badge/-Webpack?logo=webpack)
+![SASS](https://img.shields.io/badge/-SASS?logo=sass)
+![npm](https://img.shields.io/badge/-npm?logo=npm)
 
 ## Запуск проекта
 
