@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navBar {
+        display: flex;
+        align-items: center;
+        gap: 66px;
+
+        a {
+            &:hover {
+                color: rgb(124, 124, 124);
+            }
+        }
+    }
+}
+
+
+
+

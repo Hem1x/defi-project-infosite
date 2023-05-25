@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    .dropdownRun {
+        cursor: pointer;
+
+        .dropdownIcon {
+            margin-left: .75rem;
+        }
+    }
+
+    .dropdownContent {
+        position: absolute;
+        z-index: 1;
+        margin-top: 2.5rem;
+        padding: 17px 22px;
+        border-radius: 20px;
+        background: linear-gradient(32.04deg, #1900FF 0%, #F43131 99.99%, #1900FF 100%);
+        
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+
+        a {
+            display: block;
+            font-weight: 700;
+            color: white;
+            transition: 0.5s;
+
+            &:hover {
+                color: #cab7ff;
+                transition: 0.3s;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
