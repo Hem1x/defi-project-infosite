@@ -69,7 +69,7 @@ const WhatDeFi = () => {
       
       <div className={s.advantages}>
           <div className={s.title}>Преимущества DeFi</div>
-          {advantages.map(advantage => <Advantage advantage={advantage}/>)}
+          {advantages.map(advantage => <Advantage key={advantage.id} advantage={advantage}/>)}
       </div>
     </div>
   )
