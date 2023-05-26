@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title/Title'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <Title name="О проекте"/>
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ import News from './components/pages/News'
 import Partners from './components/pages/Partners'
 import Roadmap from './components/pages/Roadmap'
 import Team from './components/pages/Team'
-import WhatDeFi from './components/pages/WhatDeFi'
+import WhatDeFi from './components/pages/WhatDeFi/WhatDeFi'
 import Vacancies from './components/pages/Vacancies'
 import Main from './components/pages/Main'
 

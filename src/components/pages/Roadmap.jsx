@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title/Title'
 
 const Roadmap = () => {
   return (
-    <div>Roadmap</div>
+    <div>
+      <Title name="Roadmap"/>
+    </div>
   )
 }
 

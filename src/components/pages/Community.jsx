@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title/Title'
 
 const Community = () => {
   return (
-    <div>Community</div>
+    <div>
+      <Title name="Сообщество"/>
+    </div>
   )
 }
 

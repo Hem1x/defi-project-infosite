@@ -7,10 +7,11 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 const Menu = () => {
     const location = useLocation()
+
+    // Оставляю дропдаун выделенным даже при смене url
     const [url1, setUrl1] = useState('about')
     const [url2, setUrl2] = useState('community')
 
-    // Оставляю дропдаун выделенным даже при смене url
     useEffect(() => {
         const url = location.pathname.slice(1)
 

@@ -1,0 +1,30 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    color: black;
+    border-radius: 0px 20px 20px 0px;
+
+    .picture {
+        text-align: center;
+        padding: 21px 0;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 10px;
+        font-size: 20px;
+        background-color: #fff;
+        padding: 30px 24px;
+        border-radius: 0 20px 20px 0;
+
+        .title {
+            font-weight: 700;
+            font-size: 25px;
+        }
+    }
+}
+

@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title/Title'
 
 const Partners = () => {
   return (
-    <div>Partners</div>
+    <div>
+      <Title name="Партнёры"/>
+    </div>
   )
 }
 
