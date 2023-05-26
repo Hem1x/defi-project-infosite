@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: white;
+    color: black;
+
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 20px;
+
+
+    .containerImg {
+        overflow: hidden;
+        max-height: 23rem;
+
+        img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+
+    .containerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 24px;
+        gap: 20px;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            .title {
+                font-weight: 700;
+                font-size: 20px;
+            }
+    
+            .date {
+                color: rgba(0, 0, 0, 0.507);
+            }
+        }
+
+
+        .text {
+            font-size: 15px;
+            line-height: 1.8rem;
+        }
+    }
+}
