@@ -2,7 +2,7 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import MainLayout from './layouts/MainLayout';
 import About from './components/pages/About'
-import Community from './components/pages/Community'
+import Community from './components/pages/Community/Community'
 import FAQ from './components/pages/FAQ'
 import News from './components/pages/News/News'
 import Partners from './components/pages/Partners/Partners'

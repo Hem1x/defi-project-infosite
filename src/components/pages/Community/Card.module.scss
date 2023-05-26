@@ -1,0 +1,19 @@
+.card {
+    background-color: white;
+    padding: 50px;
+    margin: 30px;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .name {
+        margin-bottom: 0;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
