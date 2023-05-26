@@ -1,0 +1,17 @@
+.funds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+    .fund {
+        margin: 40px 20px;
+
+        img {
+            max-height: 80px;
+            border-radius: 20px;
+        }
+    }
+}

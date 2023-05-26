@@ -45,7 +45,7 @@ const Menu = () => {
 
             <DropDown name='О нас' url={url2}>
                 <NavLink to='community'>Сообщество</NavLink>
-                <NavLink to='partners'>Партнёры</NavLink>
+                <NavLink to='partners'>Инвесторы</NavLink>
                 <NavLink to='vacancies'>Вакансии</NavLink>
             </DropDown>
         </div>
