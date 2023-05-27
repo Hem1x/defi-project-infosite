@@ -44,7 +44,7 @@ const Roadmap = () => {
   ]
 
   return (
-    <div>
+    <div className={s.roadmapBlock}>
       <Title name="Roadmap"/>
 
       <div className={s.cardList}>
