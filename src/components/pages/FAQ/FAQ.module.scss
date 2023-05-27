@@ -1,0 +1,16 @@
+.FAQList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .search {
+        border: none;
+        border-radius: 5px;
+
+        padding-left: 2rem;
+        padding: 16px;
+
+        font-size: 20px;
+    }
+}
+

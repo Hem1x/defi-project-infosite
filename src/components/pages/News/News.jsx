@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title'
+import Title from '../../Title/Title'
 import s from './News.module.scss'
 import NewsBlock from './NewsBlock'
 import news1 from '../../../assets/news1.svg'

@@ -1,0 +1,30 @@
+.container {
+    
+
+    .question {
+        font-size: 20px;
+        background-color: #261E71;
+        padding: 1.5rem 3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+
+        &Active {
+            @extend .question;
+            background-color: #423d70;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+
+
+    .answer {
+        padding: 30px 25px;
+        color: black;
+        font-size: 17px;
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+    }
+}

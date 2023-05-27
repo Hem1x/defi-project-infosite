@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title'
+import Title from '../../Title/Title'
 import Card from './Card'
 import img1 from '../../../assets/roadmap/img1.svg'
 import img2 from '../../../assets/roadmap/img2.svg'

@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title'
+import Title from '../../Title/Title'
 import whatDeFi from '../../../assets/whatDeFi.svg'
 import s from './WhatDeFi.module.scss'
 import decentral from '../../../assets/decentral.svg'

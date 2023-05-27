@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title'
+import Title from '../../Title/Title'
 import s from './Partners.module.scss'
 import fund1 from '../../../assets/fund1.svg'
 import fund2 from '../../../assets/fund2.svg'

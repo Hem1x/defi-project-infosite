@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title'
+import Title from '../../Title/Title'
 import s from './Team.module.scss'
 import team from '../../../assets/team.svg'
 import Card from './Card'

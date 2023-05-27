@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title/Title'
+import Title from '../../Title/Title'
 import s from './Community.module.scss'
 import github from '../../../assets/community/github.svg'
 import twitter from '../../../assets/community/twitter.svg'
