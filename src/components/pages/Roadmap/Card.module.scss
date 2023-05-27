@@ -1,0 +1,78 @@
+.container {
+    max-width: 1000px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: black;
+    background-color: white;
+
+    gap: 24px;
+
+    .containerItem {
+
+        img {
+            display: block;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .title {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: .7rem;
+        }
+
+        .text {
+            font-size: 15px;
+            margin-bottom: 2.5rem;
+        }
+
+        .statusLine {
+            display: flex;
+            justify-content: space-evenly;
+
+            .statusItem {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .statusType {
+                    font-weight: 700;
+                }
+
+                .indicators {
+                    display: flex;
+                    gap: 3px;
+
+                    .statusWill,
+                    .statusBe,
+                    .statusWas {
+                        border-radius: 20px;
+                        width: 4px;
+                        height: 20px;
+                    }
+    
+                    .statusWill {
+                        background-color: gray;
+                    }
+    
+                    .statusBe {
+                        background-color: rgb(255, 191, 0);
+                    }
+    
+                    .statusWas {
+                        background-color: green;
+                    }
+                }
+
+
+            }
+        }
+
+        &:last-child {
+            padding-right: 24px;
+        }
+        
+    }
+}
