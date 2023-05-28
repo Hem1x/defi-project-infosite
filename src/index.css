@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  overflow-block: hidden;
   padding: 60px 120px 0 120px;
-  overflow-x: hidden;
   background-color: #0D0D2B;
   font-family: 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
