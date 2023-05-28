@@ -19,10 +19,13 @@ const Main = () => {
           <div className={s.textTitle}>Esotera - самый быстрый и безопасный DeFi </div>
           <div className={s.textSubTitle}>Покупайте и продавайте криптовалюту, нам доверили 10M кошельков с транзакциями на сумму более 30 миллиардов долларов.</div>
           
-          <button className={s.textBtn}>
-            <span><NavLink to="/about">О проекте</NavLink></span>
-            <img src={ArrowRight} alt="right" />
-          </button>
+          <NavLink to="/about">
+            <button className={s.textBtn}>
+              <span>О проекте</span>
+              <img src={ArrowRight} alt="right" />
+            </button>
+          </NavLink>
+
         </div>
         <div className={s.img}>
           <img src={MainIllustration} alt="about project" />
