@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import ArrowRight from '../../../assets/ArrowRight.svg'
-import MainIllustration from '../../../assets/MainIllustration.svg'
+import ArrowRight from '../../../assets/main//ArrowRight.svg'
+import MainIllustration from '../../../assets/main//MainIllustration.svg'
 import s from './Main.module.scss'
 import {motion} from 'framer-motion'
 

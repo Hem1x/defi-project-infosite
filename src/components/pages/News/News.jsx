@@ -2,8 +2,8 @@ import React from 'react'
 import Title from '../../Title/Title'
 import s from './News.module.scss'
 import NewsBlock from './NewsBlock'
-import news1 from '../../../assets/news1.svg'
-import news2 from '../../../assets/news2.svg'
+import news1 from '../../../assets/news/news1.svg'
+import news2 from '../../../assets/news/news2.svg'
 import {motion} from 'framer-motion'
 
 const News = () => {

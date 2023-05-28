@@ -1,8 +1,8 @@
 import React from 'react'
 import s from './Card.module.scss'
-import tg from '../../../assets/tg.svg'
-import linkedin from '../../../assets/linkedin.svg'
-import twitter from '../../../assets/twitter.svg'
+import tg from '../../../assets/team/tg.svg'
+import linkedin from '../../../assets/team/linkedin.svg'
+import twitter from '../../../assets/team/twitter.svg'
 
 const Card = ({teammate}) => {
   return (

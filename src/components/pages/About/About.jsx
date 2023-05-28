@@ -1,8 +1,8 @@
 import React from 'react'
 import Title from '../../Title/Title'
 import s from './About.module.scss'
-import project from '../../../assets/project.svg'
-import mission from '../../../assets/mission.svg'
+import project from '../../../assets/about/project.svg'
+import mission from '../../../assets/about/mission.svg'
 import {motion} from 'framer-motion'
 
 const About = () => {
