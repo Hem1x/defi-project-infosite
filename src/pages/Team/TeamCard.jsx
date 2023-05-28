@@ -3,6 +3,7 @@ import s from './TeamCard.module.scss'
 import tg from '../../assets/team/tg.svg'
 import linkedin from '../../assets/team/linkedin.svg'
 import twitter from '../../assets/team/twitter.svg'
+import Social from '../../components/Social/Social'
 
 const TeamCard = ({teammate}) => {
   return (
@@ -20,17 +21,9 @@ const TeamCard = ({teammate}) => {
 
         {/* Socials */}
         <div className={s.conteinerSocials}>
-            <a href={teammate.telegram} target="_blank" rel="noopener noreferrer">
-                <img src={tg} alt='telegram' />
-            </a>
-
-            <a href={teammate.twitter} target="_blank" rel="noopener noreferrer">
-                <img src={twitter} alt='twitter' />
-            </a>
-
-            <a href={teammate.linkedin} target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} alt='linkedin' />
-            </a>
+            <Social name={teammate.telegram} src={tg} />
+            <Social name={teammate.twitter} src={twitter} />
+            <Social name={teammate.linkedin} src={linkedin} />
         </div>
 
     </div>
