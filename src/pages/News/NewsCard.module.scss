@@ -32,11 +32,13 @@
             justify-content: space-between;
 
             .title {
+                flex: 0.78;
                 font-weight: 700;
                 font-size: 20px;
             }
     
             .date {
+                flex: 0.22;
                 color: rgba(0, 0, 0, 0.507);
             }
         }
