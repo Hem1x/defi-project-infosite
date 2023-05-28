@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../../Title/Title'
 import Vacance from './Vacance'
 import s from './Vacancies.module.scss'
+import {motion} from 'framer-motion'
 
 const Vacancies = () => {
   const vacancies = [
@@ -23,16 +24,22 @@ const Vacancies = () => {
       experience: 3,
       stack: ['Python', 'Django/Flask', 'Docker', 'Node.js']
     },
-  ]
+  ] 
+
+  const transition = {duration: 1}
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="Вакансии"/>
 
       <div className={s.vacList}>
         {vacancies.map(vac => <Vacance key={vac.name} vacance={vac} />)}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

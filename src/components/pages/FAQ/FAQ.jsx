@@ -3,6 +3,7 @@ import Title from '../../Title/Title'
 import Question from './Question'
 import s from './FAQ.module.scss'
 import Search from './Search'
+import {motion} from 'framer-motion'
 
 const FAQ = () => {
   const questions = [
@@ -35,16 +36,20 @@ const FAQ = () => {
 
   const [searchQuery, setSearchQuery] = useState('');
   const filteredFAQ = questions.filter(question => question.text.toLowerCase().includes(searchQuery.toLowerCase()))
-
+  const transition = {duration: 1}
   return (
-    <div>
+    <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="FAQ"/>
       <div className={s.FAQList}>
           <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} className={s.search}/>
           {filteredFAQ.map(question => <Question key={question.id} question={question}/>)}
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

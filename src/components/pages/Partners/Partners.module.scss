@@ -12,6 +12,12 @@
         img {
             max-height: 80px;
             border-radius: 20px;
+            transition: .5s;
+
+            &:hover {
+                transition: .5s;
+                transform: scale(1.2);
+            }
         }
     }
 }

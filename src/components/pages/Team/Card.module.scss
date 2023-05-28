@@ -11,8 +11,12 @@
     background-color: white;
     color: black;
     border-radius: 10px;
+    transition: .2s;
 
-
+    &:hover {
+        transition: .5s;
+        transform: scale(1.2);
+    }
 
     .containerImg {
         margin: 0 auto;
@@ -37,5 +41,12 @@
     .conteinerSocials {
         display: flex;
         justify-content: space-between;
+        transition: .3s;
+
+        a:hover {
+            transition: .3s;
+            opacity: 0.4;
+            transform: scale(1.1);
+        }
     }
 }

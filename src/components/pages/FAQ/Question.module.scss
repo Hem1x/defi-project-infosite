@@ -1,5 +1,5 @@
 .container {
-    
+    cursor: pointer;
 
     .question {
         font-size: 20px;
@@ -10,21 +10,28 @@
         align-items: center;
         justify-content: space-between;
         border-radius: 10px;
+        transition: 1s;
 
         &Active {
             @extend .question;
             background-color: #423d70;
             border-radius: 10px 10px 0 0;
+            
         }
     }
 
-
-
-    .answer {
+    .answerActive {
+        transition: .3s ease;
         padding: 30px 25px;
         color: black;
         font-size: 17px;
         background-color: white;
         border-radius: 0 0 10px 10px;
+        transition: .5s;
+
+    }
+
+    .answer {
+        transition: .5s;
     }
 }

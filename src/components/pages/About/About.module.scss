@@ -63,5 +63,16 @@
         font-size: 25px;
         color: white;
         border-radius: 20px;
+        transition: .3s;
+
+        &:hover {
+            transition: .3s;
+            transform: scale(1.1);
+            background-color: #051882;
+        }
+
+        a:visited {
+            color: white;
+        }
     }
 }

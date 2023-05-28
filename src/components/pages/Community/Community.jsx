@@ -5,6 +5,7 @@ import github from '../../../assets/community/github.svg'
 import twitter from '../../../assets/community/twitter.svg'
 import telegram from '../../../assets/community/telegram.svg'
 import Card from './Card'
+import {motion} from 'framer-motion'
 
 const Community = () => {
   const socials = [
@@ -28,15 +29,21 @@ const Community = () => {
     },
   ]
 
+  const transition = {duration: 1}
+
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="Сообщество"/>
       <div className={s.communityList}>
         {
           socials.map(social => (<Card social={social}/>))
         }
       </div>
-    </div>
+    </motion.div>
   )
 }
 

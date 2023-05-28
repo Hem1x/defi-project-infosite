@@ -4,6 +4,7 @@ import s from './News.module.scss'
 import NewsBlock from './NewsBlock'
 import news1 from '../../../assets/news1.svg'
 import news2 from '../../../assets/news2.svg'
+import {motion} from 'framer-motion'
 
 const News = () => {
   const news = [
@@ -37,13 +38,19 @@ const News = () => {
     },
   ]
 
+  const transition = {duration: 1}
+
   return (
-    <div>
+    <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="Новости"/>
       <div className={s.newsList}>
         {news.map(newsBlock => <NewsBlock key={newsBlock.id} newsBlock={newsBlock}/>)}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -3,6 +3,7 @@ import Title from '../../Title/Title'
 import s from './Team.module.scss'
 import team from '../../../assets/team.svg'
 import Card from './Card'
+import {motion} from 'framer-motion'
 
 const Team = () => {
   const teammates = [
@@ -39,7 +40,7 @@ const Team = () => {
       position: 'Project Manager',
       twitter: 'https://twitter.com/?lang=ru',
       linkedin: 'https://ru.linkedin.com/',
-      telegram: 'https://web.telegram.org/',
+      telegram: 'https://web.telegram.org/', 
       img: team
     },
     {
@@ -62,13 +63,19 @@ const Team = () => {
     },
   ]
 
+  const transition = {duration: 1}
+
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="Команда"/>
       <div className={s.cardsCointainer}>
         {teammates.map(teammate => <Card key={teammate.id} teammate={teammate}/>)}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

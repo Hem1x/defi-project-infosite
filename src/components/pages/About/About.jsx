@@ -3,10 +3,17 @@ import Title from '../../Title/Title'
 import s from './About.module.scss'
 import project from '../../../assets/project.svg'
 import mission from '../../../assets/mission.svg'
+import {motion} from 'framer-motion'
 
 const About = () => {
+  const transition = {duration: 1}
+
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0, y: 100 }}
+    animate={{ opacity: 1, y: 0, transition }}
+    exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="О проекте"/>
 
       <div className={s.container}>
@@ -36,9 +43,11 @@ const About = () => {
           <img src={mission} alt='Esotera logo'/>
         </div>
 
-        <button className={s.missionBtn}>Присоединиться</button>
+        <button className={s.missionBtn}>
+          <a href='https://web.telegram.org/k/' target='_blank' rel="noreferrer noopener">Присоединиться</a>
+        </button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -4,7 +4,8 @@ import Card from './Card'
 import img1 from '../../../assets/roadmap/img1.svg'
 import img2 from '../../../assets/roadmap/img2.svg'
 import img3 from '../../../assets/roadmap/img3.svg'
-import s from './Roadmap.module.scss'
+import s from './Roadmap.module.scss' 
+import {motion} from 'framer-motion'
 
 const Roadmap = () => {
   const cards = [
@@ -43,14 +44,22 @@ const Roadmap = () => {
     }
   ]
 
-  return (
-    <div className={s.roadmapBlock}>
-      <Title name="Roadmap"/>
+  const transition = {duration: 1}
 
-      <div className={s.cardList}>
-        {cards.map(card => <Card key={card.id} card={card}/>)}
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
+      <div className={s.roadmapBlock}>
+        <Title name="Roadmap"/>
+
+        <div className={s.cardList}>
+          {cards.map(card => <Card key={card.id} card={card}/>)}
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

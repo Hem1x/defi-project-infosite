@@ -8,8 +8,10 @@ import opasity from '../../../assets/opasity.svg'
 import humanFactor from '../../../assets/humanFactor.svg'
 import without3 from '../../../assets/without3.svg'
 import Advantage from './Advantage'
+import {motion} from 'framer-motion'
+
 const WhatDeFi = () => {
-  const advantages = [
+  const advantages = [ 
     {
       id: 1, 
       title: "Децентрализованы", 
@@ -47,8 +49,14 @@ const WhatDeFi = () => {
     },
   ]
 
+  const transition = {duration: 1}
+
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0, transition }}
+      exit={{ opacity: 0, y: 100 }}
+    >
       <Title name="Что такое DeFi ?"/>
 
       <div className={s.container}>
@@ -71,7 +79,7 @@ const WhatDeFi = () => {
           <div className={s.title}>Преимущества DeFi</div>
           {advantages.map(advantage => <Advantage key={advantage.id} advantage={advantage}/>)}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

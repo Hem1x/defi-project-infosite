@@ -20,6 +20,8 @@
         }
 
         .textBtn {
+            cursor: pointer;
+
             display: flex;
             align-items: center;
             gap: 1.5rem;
@@ -31,6 +33,16 @@
             font-size: 18px;
             padding: 1rem;
             padding-left: 1.5rem;
+            transition: .4s;
+
+            &:hover {
+                transition: .4s;
+                background-color: #cf7713;
+            }
+
+            a:visited {
+                color: white;
+            }
         }
     }
 

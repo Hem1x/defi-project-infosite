@@ -16,7 +16,9 @@ const Vacance = ({vacance}) => {
             </div>
 
             <div className={s.containerItem}>
-                <button>Откликнуться</button>
+                <button>
+                    <a href='https://web.telegram.org/k/'>Откликнуться</a>
+                </button>
             </div>
         </div>
     )

@@ -15,9 +15,14 @@
         margin-bottom: 0;
         font-size: 50px;
         font-weight: 700;
+        color: black;
+        transition: .5s;
 
-        &:visited {
-            color: black;
+        &:hover {
+            transition: .5s;
+            color: rgb(52, 21, 104);
+            transform: scale(.8);
         }
     }
+    
 }

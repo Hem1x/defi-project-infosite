@@ -1,36 +1,13 @@
-import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import MainLayout from './layouts/MainLayout';
-import About from './components/pages/About/About'
-import Community from './components/pages/Community/Community'
-import FAQ from './components/pages/FAQ/FAQ'
-import News from './components/pages/News/News'
-import Partners from './components/pages/Partners/Partners'
-import Roadmap from './components/pages/Roadmap/Roadmap'
-import Team from './components/pages//Team/Team'
-import WhatDeFi from './components/pages/WhatDeFi/WhatDeFi'
-import Vacancies from './components/pages/Vacancies/Vacancies'
-import Main from './components/pages/Main/Main'
+import {BrowserRouter} from 'react-router-dom'
+import './App.css'
+import AnimatedRoutes from './AnimatedRoutes';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path='/' element={<MainLayout />}>
-            <Route path='main' element={<Main />}/>
-            <Route path='about' element={<About />}/>
-            <Route path='community' element={<Community />}/>
-            <Route path='faq' element={<FAQ />}/>
-            <Route path='news' element={<News />}/>
-            <Route path='partners' element={<Partners />}/>
-            <Route path='roadmap' element={<Roadmap />}/>
-            <Route path='team' element={<Team />}/>
-            <Route path='vacancies' element={<Vacancies />}/>
-            <Route path='what-is-defi' element={<WhatDeFi />}/>
-          </Route>
-        </Routes>
+      <div className='App'>
+        <AnimatedRoutes />
       </div>
     </BrowserRouter>
   );
