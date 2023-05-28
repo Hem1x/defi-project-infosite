@@ -4,6 +4,7 @@ import s from './Menu.module.scss'
 import DropDown from '../DropDown/DropDown'
 import CustomLink from '../CustomLink/CustomLink'
 import { NavLink, useLocation } from 'react-router-dom'
+import useChangeDropdown from '../hooks/useChangeDropdown'
 
 const Menu = () => {
     const location = useLocation()
@@ -23,6 +24,9 @@ const Menu = () => {
 
     }, [location])
 
+    const dropdownName1 = useChangeDropdown("Esotera", 0, location)
+    const dropdownName2 = useChangeDropdown("О нас", 1, location)
+
     return (
     <nav className={s.nav}>
         <div className={s.navLogo}>
@@ -34,7 +38,7 @@ const Menu = () => {
         <div className={s.navBar}>
             <CustomLink to='what-is-defi'>Что такое DeFi ?</CustomLink>
 
-            <DropDown name='Esotera' url={url1}>
+            <DropDown name={dropdownName1} url={url1}>
                 <NavLink to='about'>О проекте</NavLink>
                 <NavLink to='team'>Команда</NavLink>
                 <NavLink to='roadmap'>Roadmap</NavLink>
@@ -43,7 +47,7 @@ const Menu = () => {
             <CustomLink to='news'>Новости</CustomLink>
             <CustomLink to='faq'>FAQ</CustomLink>
 
-            <DropDown name='О нас' url={url2}>
+            <DropDown name={dropdownName2} url={url2}>
                 <NavLink to='community'>Сообщество</NavLink>
                 <NavLink to='partners'>Инвесторы</NavLink>
                 <NavLink to='vacancies'>Вакансии</NavLink>

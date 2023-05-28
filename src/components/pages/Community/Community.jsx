@@ -40,7 +40,7 @@ const Community = () => {
       <Title name="Сообщество"/>
       <div className={s.communityList}>
         {
-          socials.map(social => (<Card social={social}/>))
+          socials.map(social => (<Card key={social.id} social={social}/>))
         }
       </div>
     </motion.div>
