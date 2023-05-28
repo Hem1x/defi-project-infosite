@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import Title from '../../Title/Title'
-import Question from './Question'
 import s from './FAQ.module.scss'
+import Title from '../../components/Title/Title'
+import Question from './Question'
 import Search from './Search'
 import {motion} from 'framer-motion'
 

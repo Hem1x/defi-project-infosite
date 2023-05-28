@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../../Title/Title'
-import Card from './Card'
-import img1 from '../../../assets/roadmap/img1.svg'
-import img2 from '../../../assets/roadmap/img2.svg'
-import img3 from '../../../assets/roadmap/img3.svg'
 import s from './Roadmap.module.scss' 
+import Title from '../../components/Title/Title'
+import Card from './Card'
+import img1 from '../../assets/roadmap/img1.svg'
+import img2 from '../../assets/roadmap/img2.svg'
+import img3 from '../../assets/roadmap/img3.svg'
 import {motion} from 'framer-motion'
 
 const Roadmap = () => {

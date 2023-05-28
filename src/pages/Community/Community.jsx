@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../../Title/Title'
 import s from './Community.module.scss'
-import github from '../../../assets/community/github.svg'
-import twitter from '../../../assets/community/twitter.svg'
-import telegram from '../../../assets/community/telegram.svg'
+import Title from '../../components/Title/Title'
 import Card from './Card'
+import github from '../../assets/community/github.svg'
+import twitter from '../../assets/community/twitter.svg'
+import telegram from '../../assets/community/telegram.svg'
 import {motion} from 'framer-motion'
 
 const Community = () => {

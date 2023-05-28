@@ -1,14 +1,14 @@
 import React from 'react'
-import Title from '../../Title/Title'
-import Advantage from './Advantage'
-import {motion} from 'framer-motion'
-import whatDeFi from '../../../assets/whatDefi/whatDeFi.svg'
-import decentral from '../../../assets/whatDefi/decentral.svg'
-import inclusion from '../../../assets/whatDefi/inclusion.svg'
-import opasity from '../../../assets/whatDefi/opasity.svg'
-import humanFactor from '../../../assets/whatDefi/humanFactor.svg'
-import without3 from '../../../assets/whatDefi/without3.svg'
 import s from './WhatDeFi.module.scss'
+import Title from '../../components/Title/Title'
+import Advantage from './Advantage'
+import whatDeFi from '../../assets/whatDefi/whatDeFi.svg'
+import decentral from '../../assets/whatDefi/decentral.svg'
+import inclusion from '../../assets/whatDefi/inclusion.svg'
+import opasity from '../../assets/whatDefi/opasity.svg'
+import humanFactor from '../../assets/whatDefi/humanFactor.svg'
+import without3 from '../../assets/whatDefi/without3.svg'
+import {motion} from 'framer-motion'
 
 const WhatDeFi = () => {
   const advantages = [ 

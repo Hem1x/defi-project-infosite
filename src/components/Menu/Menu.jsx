@@ -4,7 +4,7 @@ import s from './Menu.module.scss'
 import DropDown from '../DropDown/DropDown'
 import CustomLink from '../CustomLink/CustomLink'
 import { NavLink, useLocation } from 'react-router-dom'
-import useChangeDropdown from '../hooks/useChangeDropdown'
+import useChangeDropdown from '../../hooks/useChangeDropdown'
 
 const Menu = () => {
     const location = useLocation()

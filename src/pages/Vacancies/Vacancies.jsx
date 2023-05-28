@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../../Title/Title'
+import Title from '../../components/Title/Title'
 import Vacance from './Vacance'
 import s from './Vacancies.module.scss'
 import {motion} from 'framer-motion'

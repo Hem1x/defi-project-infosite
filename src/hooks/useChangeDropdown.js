@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 
 export default function useChangeDropdown(initialValue, dropdownNumber, location) {
     const [value, setValue] = useState(initialValue)
