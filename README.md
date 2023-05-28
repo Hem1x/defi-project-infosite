@@ -2,7 +2,12 @@
 
 Информационный сайт DeFi-проекта
 
+## Демонстрация работы
+
+![Animated GIF](./show.gif)
+
 ## Технологии
+
 ![React](https://img.shields.io/badge/-React-000?logo=react)
 ![HTML5](https://img.shields.io/badge/-HTML5-000?logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS3-000?logo=css3)
