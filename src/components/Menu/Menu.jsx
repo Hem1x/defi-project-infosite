@@ -32,7 +32,7 @@ const Menu = () => {
     return (
     <nav className={s.nav}>
         <div className={s.navLogo}>
-            <NavLink to='main'>
+            <NavLink to=''>
                 <img src={LogoSVG} alt='Esotera logo'/>
             </NavLink>
         </div>

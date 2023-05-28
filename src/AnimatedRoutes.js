@@ -10,7 +10,6 @@ import Roadmap from './pages/Roadmap/Roadmap'
 import Team from './pages//Team/Team'
 import WhatDeFi from './pages/WhatDeFi/WhatDeFi'
 import Vacancies from './pages/Vacancies/Vacancies'
-import Main from './pages/Main/Main'
 import {AnimatePresence} from 'framer-motion'
 const AnimatedRoutes = () => {
     const location = useLocation()
@@ -19,16 +18,15 @@ const AnimatedRoutes = () => {
         <AnimatePresence>
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<MainLayout />}>
-            <Route path="/main" element={<Main />}/>
-            <Route path="/about" element={<About />} />
-            <Route path="/community" element={<Community />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/partners" element={<Partners />} />
-            <Route path="/roadmap" element={<Roadmap />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/vacancies" element={<Vacancies />} />
-            <Route path="/what-is-defi" element={<WhatDeFi />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/community" element={<Community />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/partners" element={<Partners />} />
+                <Route path="/roadmap" element={<Roadmap />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/vacancies" element={<Vacancies />} />
+                <Route path="/what-is-defi" element={<WhatDeFi />} />
             </Route>
         </Routes>
     </AnimatePresence>
