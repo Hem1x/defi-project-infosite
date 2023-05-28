@@ -1,7 +1,7 @@
 import React from 'react'
-import s from './Vacance.module.scss'
+import s from './Card.module.scss'
 
-const Vacance = ({vacance}) => {
+const Card = ({vacance}) => {
 
     const validPostfix = vacance.experience === 1 ? 'года' : 'лет'
 
@@ -24,4 +24,4 @@ const Vacance = ({vacance}) => {
     )
 }
 
-export default Vacance
+export default Card

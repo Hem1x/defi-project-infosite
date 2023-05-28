@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './WhatDeFi.module.scss'
 import Title from '../../components/Title/Title'
-import Advantage from './Advantage'
+import Card from './Card'
 import whatDeFi from '../../assets/whatDefi/whatDeFi.svg'
 import decentral from '../../assets/whatDefi/decentral.svg'
 import inclusion from '../../assets/whatDefi/inclusion.svg'
@@ -77,7 +77,7 @@ const WhatDeFi = () => {
       
       <div className={s.advantages}>
           <div className={s.title}>Преимущества DeFi</div>
-          {advantages.map(advantage => <Advantage key={advantage.id} advantage={advantage}/>)}
+          {advantages.map(advantage => <Card key={advantage.id} advantage={advantage}/>)}
       </div>
     </motion.div>
   )

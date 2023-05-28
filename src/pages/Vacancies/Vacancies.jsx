@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../../components/Title/Title'
-import Vacance from './Vacance'
+import Card from './Card'
 import s from './Vacancies.module.scss'
 import {motion} from 'framer-motion'
 
@@ -37,7 +37,7 @@ const Vacancies = () => {
       <Title name="Вакансии"/>
 
       <div className={s.vacList}>
-        {vacancies.map(vac => <Vacance key={vac.name} vacance={vac} />)}
+        {vacancies.map(vac => <Card key={vac.name} vacance={vac} />)}
       </div>
     </motion.div>
   )

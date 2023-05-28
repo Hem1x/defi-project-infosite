@@ -1,6 +1,5 @@
 import React from 'react'
 import {Routes, Route, useLocation} from 'react-router-dom'
-import {AnimatePresence} from 'framer-motion'
 import MainLayout from './layouts/MainLayout';
 import About from './pages/About/About'
 import Community from './pages/Community/Community'
@@ -12,7 +11,7 @@ import Team from './pages//Team/Team'
 import WhatDeFi from './pages/WhatDeFi/WhatDeFi'
 import Vacancies from './pages/Vacancies/Vacancies'
 import Main from './pages/Main/Main'
-
+import {AnimatePresence} from 'framer-motion'
 const AnimatedRoutes = () => {
     const location = useLocation()
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import s from './NewsBlock.module.scss'
+import s from './Card.module.scss'
 
-const NewsBlock = ({newsBlock}) => {
+const Card = ({newsBlock}) => {
   return (
     <div className={s.container}>
         <div className={s.containerImg}>
@@ -20,4 +20,4 @@ const NewsBlock = ({newsBlock}) => {
   )
 }
 
-export default NewsBlock
+export default Card
