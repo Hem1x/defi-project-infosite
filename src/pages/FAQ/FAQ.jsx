@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import s from './FAQ.module.scss'
 import Title from '../../components/Title/Title'
-import Question from './Question'
-import Search from './Search'
+import FAQCard from './FAQCard'
+import SearchInput from '../../components/SearchInput/SearchInput'
 import {motion} from 'framer-motion'
 
 const FAQ = () => {
@@ -37,7 +37,9 @@ const FAQ = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const filteredFAQ = questions.filter(question => question.text.toLowerCase().includes(searchQuery.toLowerCase()))
   const transition = {duration: 1}
+
   return (
+    // Анимация перехода/выхода страницы
     <motion.div 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -45,8 +47,13 @@ const FAQ = () => {
     >
       <Title name="FAQ"/>
       <div className={s.FAQList}>
-          <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} className={s.search}/>
-          {filteredFAQ.map(question => <Question key={question.id} question={question}/>)}
+          <SearchInput 
+            searchQuery={searchQuery} 
+            setSearchQuery={setSearchQuery} 
+            className={s.search}
+          />
+          {/* Рендер компонетов Card на странице FAQ */}
+          {filteredFAQ.map(question => <FAQCard key={question.id} question={question}/>)}
       </div>
 
     </motion.div>

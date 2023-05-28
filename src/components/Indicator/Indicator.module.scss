@@ -1,0 +1,34 @@
+.statusItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .statusType {
+        font-weight: 700;
+    }
+
+    .indicators {
+        display: flex;
+        gap: 3px;
+
+        .statusWill,
+        .statusBe,
+        .statusWas {
+            border-radius: 20px;
+            width: 4px;
+            height: 20px;
+        }
+
+        .statusWill {
+            background-color: gray;
+        }
+
+        .statusBe {
+            background-color: red;
+        }
+
+        .statusWas {
+            background-color: green;
+        }
+    }
+}

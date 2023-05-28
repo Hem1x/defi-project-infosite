@@ -10,6 +10,7 @@ const About = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0, transition }}
@@ -17,8 +18,11 @@ const About = () => {
     >
       <Title name="О проекте"/>
 
+      {/* Секция 1 */}
       <div className={s.container}>
-        <div className={s.containerItem}>
+
+        {/* Текстовый блок */}
+        <div className={s.container__item}>
           <div className={s.title}>В чём суть?.</div>
 
           <div className={s.text}>
@@ -30,20 +34,26 @@ const About = () => {
           </div>
         </div>
 
-        <div className={s.containerItem}>
+        {/* Иллюстрация */}
+        <div className={s.container__item}>
           <img src={project} alt='project'/>
         </div>
       </div>
 
+      {/* Секция 2 */}
       <div className={s.missionContainer}>
+
+        {/* Текстовый блок */}
         <div className={s.missionText}>
           “Мы верим, что DeFi - это будущее финансовой системы, и мы стремимся быть лидерами в этой области. Присоединяйтесь к нам сегодня и начните опыт финансовой свободы и инноваций с нашим DeFi-проектом. Будущее финансовых услуг уже здесь!”
         </div>
 
+        {/* Иллюстрация */}
         <div className={s.missionImg}>
           <img src={mission} alt='Esotera logo'/>
         </div>
 
+        {/* Кнопка "Присоединиться" */}
         <button className={s.missionBtn}>
           <a href='https://web.telegram.org/k/' target='_blank' rel="noreferrer noopener">Присоединиться</a>
         </button>

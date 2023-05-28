@@ -1,7 +1,7 @@
 import React from 'react'
-import s from './Card.module.scss'
+import s from './WhatDeFiCard.module.scss'
 
-const Card = ({advantage}) => {
+const WhatDeFiCard = ({advantage}) => {
   return (
     <div className={s.container}>
         <div className={s.picture} style={{backgroundColor: advantage.color}}>
@@ -16,4 +16,4 @@ const Card = ({advantage}) => {
   )
 }
 
-export default Card
+export default WhatDeFiCard

@@ -1,13 +1,16 @@
 import React from 'react'
-import s from './Card.module.scss'
+import s from './NewsCard.module.scss'
 
-const Card = ({newsBlock}) => {
+const NewsCard = ({newsBlock}) => {
   return (
     <div className={s.container}>
+
+        {/* Иллюстрация */}
         <div className={s.containerImg}>
             <img src={newsBlock.img} alt={newsBlock.title} />
         </div>
 
+        {/* Текстовый блок */}
         <div className={s.containerText}>
             <div className={s.header}>
                 <div className={s.title}>{newsBlock.title}</div>
@@ -20,4 +23,4 @@ const Card = ({newsBlock}) => {
   )
 }
 
-export default Card
+export default NewsCard

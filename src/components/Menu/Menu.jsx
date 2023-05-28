@@ -9,10 +9,15 @@ import useChangeDropdown from '../../hooks/useChangeDropdown'
 const Menu = () => {
     const location = useLocation()
 
-    // Оставляю дропдаун выделенным даже при смене url
+    // Состояния роутов
     const [url1, setUrl1] = useState('about')
     const [url2, setUrl2] = useState('community')
 
+    // Состояние надписи дропдауна (при смене роута надпись меняется на текущее название страницы)
+    const dropdownName1 = useChangeDropdown("Esotera", 0, location)
+    const dropdownName2 = useChangeDropdown("О нас", 1, location)
+
+    // Оставляю дропдаун выделенным даже при смене url
     useEffect(() => {
         const url = location.pathname.slice(1)
 
@@ -23,9 +28,6 @@ const Menu = () => {
         } 
 
     }, [location])
-
-    const dropdownName1 = useChangeDropdown("Esotera", 0, location)
-    const dropdownName2 = useChangeDropdown("О нас", 1, location)
 
     return (
     <nav className={s.nav}>

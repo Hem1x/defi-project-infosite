@@ -1,0 +1,41 @@
+.container {
+    max-width: 1000px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: black;
+    background-color: white;
+
+    gap: 24px;
+
+    .containerItem {
+
+        img {
+            display: block;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .title {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: .7rem;
+        }
+
+        .text {
+            font-size: 15px;
+            margin-bottom: 2.5rem;
+        }
+
+        .statusLine {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &:last-child {
+            padding-right: 24px;
+        }
+        
+    }
+}

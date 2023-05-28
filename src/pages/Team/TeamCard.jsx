@@ -1,10 +1,10 @@
 import React from 'react'
-import s from './Card.module.scss'
+import s from './TeamCard.module.scss'
 import tg from '../../assets/team/tg.svg'
 import linkedin from '../../assets/team/linkedin.svg'
 import twitter from '../../assets/team/twitter.svg'
 
-const Card = ({teammate}) => {
+const TeamCard = ({teammate}) => {
   return (
     <div className={s.container}>
         {/* Image */}
@@ -37,4 +37,4 @@ const Card = ({teammate}) => {
   )
 }
 
-export default Card
+export default TeamCard

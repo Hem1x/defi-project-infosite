@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './WhatDeFi.module.scss'
 import Title from '../../components/Title/Title'
-import Card from './Card'
+import WhatDeFiCard from './WhatDeFiCard'
 import whatDeFi from '../../assets/whatDefi/whatDeFi.svg'
 import decentral from '../../assets/whatDefi/decentral.svg'
 import inclusion from '../../assets/whatDefi/inclusion.svg'
@@ -52,6 +52,7 @@ const WhatDeFi = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -60,6 +61,8 @@ const WhatDeFi = () => {
       <Title name="Что такое DeFi ?"/>
 
       <div className={s.container}>
+
+        {/* Текствый блок */}
         <div className={s.containerItem}>
           <div className={s.title}>DeFi - это...</div>
           <div className={s.text}>финансовые инструменты, которые функционируют в виде приложений и сервисов, созданных на блокчейне.</div>
@@ -68,6 +71,7 @@ const WhatDeFi = () => {
           </div>
         </div>
 
+        {/* Иллюстрация */}
         <div className={s.containerItem}>
           <img src={whatDeFi} alt='Esotera logo'/>
         </div>
@@ -75,9 +79,10 @@ const WhatDeFi = () => {
 
       <div className={s.line}></div>
       
+      {/* Блок преимуществ */}
       <div className={s.advantages}>
           <div className={s.title}>Преимущества DeFi</div>
-          {advantages.map(advantage => <Card key={advantage.id} advantage={advantage}/>)}
+          {advantages.map(advantage => <WhatDeFiCard key={advantage.id} advantage={advantage}/>)}
       </div>
     </motion.div>
   )

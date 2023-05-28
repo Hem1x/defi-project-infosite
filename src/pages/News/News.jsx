@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './News.module.scss'
 import Title from '../../components/Title/Title'
-import Card from './Card'
+import NewsCard from './NewsCard'
 import news1 from '../../assets/news/news1.svg'
 import news2 from '../../assets/news/news2.svg'
 import {motion} from 'framer-motion'
@@ -41,6 +41,7 @@ const News = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -48,7 +49,10 @@ const News = () => {
     >
       <Title name="Новости"/>
       <div className={s.newsList}>
-        {news.map(newsBlock => <Card key={newsBlock.id} newsBlock={newsBlock}/>)}
+
+        {/* Рендер новостных блоков */}
+        {news.map(newsBlock => <NewsCard key={newsBlock.id} newsBlock={newsBlock}/>)}
+
       </div>
     </motion.div>
   )

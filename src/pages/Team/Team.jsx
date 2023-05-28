@@ -2,7 +2,7 @@ import React from 'react'
 import s from './Team.module.scss'
 import Title from '../../components/Title/Title'
 import team from '../../assets/team/team.svg'
-import Card from './Card'
+import TeamCard from './TeamCard'
 import {motion} from 'framer-motion'
 
 const Team = () => {
@@ -66,6 +66,7 @@ const Team = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -73,7 +74,10 @@ const Team = () => {
     >
       <Title name="Команда"/>
       <div className={s.cardsCointainer}>
-        {teammates.map(teammate => <Card key={teammate.id} teammate={teammate}/>)}
+
+        {/* Рендер карточек команды */}
+        {teammates.map(teammate => <TeamCard key={teammate.id} teammate={teammate}/>)}
+        
       </div>
     </motion.div>
   )

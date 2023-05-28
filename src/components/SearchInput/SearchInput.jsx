@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Search = ({searchQuery, setSearchQuery, ...props}) => {
+const SearchInput = ({searchQuery, setSearchQuery, ...props}) => {
   return (
     <input
         {...props} 
@@ -12,4 +12,4 @@ const Search = ({searchQuery, setSearchQuery, ...props}) => {
   )
 }
 
-export default Search
+export default SearchInput

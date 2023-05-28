@@ -15,6 +15,7 @@ const Partners = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -22,6 +23,8 @@ const Partners = () => {
     >
       <Title name="Инвесторы"/>
       <div className={s.funds}>
+
+        {/* Рендер фотографий Инвесторов */}
         {
           funds.map((fund, index) => (
             <div key={index} className={s.fund}>

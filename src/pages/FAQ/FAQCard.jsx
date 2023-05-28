@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
-import s from './Question.module.scss'
+import s from './FAQCard.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const Question = ({question}) => {
+const FAQCard = ({question}) => {
+    // Состояние FAQ-блока
     const [isActive, setIsActive] = useState(false)
 
     return (
-
+        // Компонент Card
             <div className={s.container}>
-
+                    {/* Рендер вопроса */}
                     <div className={isActive ? s.questionActive : s.question} onClick={() => setIsActive(!isActive)}>
                         {question.text}
                         <FontAwesomeIcon 
@@ -18,6 +19,7 @@ const Question = ({question}) => {
                         />
                     </div>
                     
+                    {/* Условный рендер ответа */}
                     {
                         isActive 
                         ? (
@@ -30,4 +32,4 @@ const Question = ({question}) => {
     )
 }
 
-export default Question
+export default FAQCard

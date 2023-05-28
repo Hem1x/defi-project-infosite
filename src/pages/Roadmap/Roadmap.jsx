@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Roadmap.module.scss' 
 import Title from '../../components/Title/Title'
-import Card from './Card'
+import RoadmapCard from './RoadmapCard'
 import img1 from '../../assets/roadmap/img1.svg'
 import img2 from '../../assets/roadmap/img2.svg'
 import img3 from '../../assets/roadmap/img3.svg'
@@ -15,9 +15,9 @@ const Roadmap = () => {
       name: 'Обновление провокола',
       text: 'Примерно 43 процента технического вклада группы исследований и разработок в DFINITY Foundation связаны с тем, чтобы сделать протокол Интернет-компьютер проверяемо децентрализованным, эффективным, масштабируемым и совместимым с другими блокчейнами. Основной протокол включает все реплики, включая систему, сетевой уровень, консенсус, среду выполнения и криптобиблиотеки.',
       status: {
-        will: 4,
-        be: 1,
-        was: 2
+        willDo: 4,
+        doing: 1,
+        done: 2
       }
     },
     {
@@ -26,9 +26,9 @@ const Roadmap = () => {
       name: 'Обновление провокола',
       text: 'Примерно 43 процента технического вклада группы исследований и разработок в DFINITY Foundation связаны с тем, чтобы сделать протокол Интернет-компьютер проверяемо децентрализованным, эффективным, масштабируемым и совместимым с другими блокчейнами. Основной протокол включает все реплики, включая систему, сетевой уровень, консенсус, среду выполнения и криптобиблиотеки.',
       status: {
-        will: 1,
-        be: 2,
-        was: 4
+        willDo: 1,
+        doing: 2,
+        done: 4
       }
     },
     {
@@ -37,9 +37,9 @@ const Roadmap = () => {
       name: 'Обновление провокола',
       text: 'Примерно 43 процента технического вклада группы исследований и разработок в DFINITY Foundation связаны с тем, чтобы сделать протокол Интернет-компьютер проверяемо децентрализованным, эффективным, масштабируемым и совместимым с другими блокчейнами. Основной протокол включает все реплики, включая систему, сетевой уровень, консенсус, среду выполнения и криптобиблиотеки.',
       status: {
-        will: 6,
-        be: 1,
-        was: 2
+        willDo: 6,
+        doing: 1,
+        done: 2
       }
     }
   ]
@@ -47,6 +47,7 @@ const Roadmap = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -56,7 +57,10 @@ const Roadmap = () => {
         <Title name="Roadmap"/>
 
         <div className={s.cardList}>
-          {cards.map(card => <Card key={card.id} card={card}/>)}
+
+          {/* Рендер компонентов для страницы "Roadmap" */}
+          {cards.map(card => <RoadmapCard key={card.id} card={card}/>)}
+
         </div>
       </div>
     </motion.div>

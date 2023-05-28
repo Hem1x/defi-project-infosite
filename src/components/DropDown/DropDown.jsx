@@ -36,8 +36,9 @@ const DropDown = ({name, children, url}) => {
                 <CustomLink to={url}>
                     {name}
                     <FontAwesomeIcon 
-                    icon={isDropDown ? faChevronUp : faChevronDown}
-                    className={s.dropdownIcon}/>
+                        icon={isDropDown ? faChevronUp : faChevronDown}
+                        className={s.dropdownIcon}
+                    />
                 </CustomLink>
             </div>
 

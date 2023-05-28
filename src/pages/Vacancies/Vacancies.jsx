@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../../components/Title/Title'
-import Card from './Card'
+import VacanciesCard from './VacanciesCard'
 import s from './Vacancies.module.scss'
 import {motion} from 'framer-motion'
 
@@ -29,6 +29,7 @@ const Vacancies = () => {
   const transition = {duration: 1}
 
   return (
+    // Анимация перехода/выхода страницы
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0, transition }}
@@ -37,7 +38,10 @@ const Vacancies = () => {
       <Title name="Вакансии"/>
 
       <div className={s.vacList}>
-        {vacancies.map(vac => <Card key={vac.name} vacance={vac} />)}
+
+        {/* Рендер карточек вакансий */}
+        {vacancies.map(vac => <VacanciesCard key={vac.name} vacance={vac} />)}
+        
       </div>
     </motion.div>
   )
