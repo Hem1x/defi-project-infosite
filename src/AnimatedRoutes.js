@@ -16,20 +16,20 @@ const AnimatedRoutes = () => {
 
     return (
         <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<MainLayout />}>
-                <Route path="/about" element={<About />} />
-                <Route path="/community" element={<Community />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/news" element={<News />} />
-                <Route path="/partners" element={<Partners />} />
-                <Route path="/roadmap" element={<Roadmap />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/vacancies" element={<Vacancies />} />
-                <Route path="/what-is-defi" element={<WhatDeFi />} />
-            </Route>
-        </Routes>
-    </AnimatePresence>
+            <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<MainLayout />}>
+                    <Route path="/about" element={<About />} />
+                    <Route path="/community" element={<Community />} />
+                    <Route path="/faq" element={<FAQ />} />
+                    <Route path="/news" element={<News />} />
+                    <Route path="/partners" element={<Partners />} />
+                    <Route path="/roadmap" element={<Roadmap />} />
+                    <Route path="/team" element={<Team />} />
+                    <Route path="/vacancies" element={<Vacancies />} />
+                    <Route path="/what-is-defi" element={<WhatDeFi />} />
+                </Route>
+            </Routes>
+        </AnimatePresence>
   )
 }
 
